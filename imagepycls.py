@@ -6,7 +6,7 @@ from io import BytesIO
 import cv2
 
 # Load the SavedModel
-model_path = 'C:\Users\krish\OneDrive\Desktop\converted_savedmodel - Copy\model.savedmodel'
+model_path = r'C:\Users\krish\OneDrive\Desktop\converted_savedmodel - Copy\model.savedmodel'
 try:
     model_layer = tf.keras.layers.TFSMLayer(model_path, call_endpoint='serving_default')
     print("Model loaded successfully.")
